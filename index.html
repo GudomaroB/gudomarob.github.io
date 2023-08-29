@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Trending Courses</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img src="icons/Logo.svg" alt="" class="header__logo-img navopacity" />
+      </a>
+      <form action="#" class="input__block navopacity">
+        <input placeholder="Search bar" type="search" class="input__block-search" required />
+        <button type="submit" class="input__block-btn">
+          <img src="icons/Search.svg" alt="" class="input__block-img" />
+        </button>
+      </form>
+      <div class="category">
+        <p class="category__par navopacity">Category</p>
+        <span class="category__span navopacity">&#10148;</span>
+        <div class="category__drop-menu dn">
+          <ul class="category__ul">
+            <li class="category__li">
+              <a href="#" class="category__link">JavaScript</a>
+            </li>
+            <li class="category__li">
+              <a href="#" class="category__link">React</a>
+            </li>
+            <li class="category__li">
+              <a href="#" class="category__link">Vue</a>
+            </li>
+            <li class="category__li">
+              <a href="#" class="category__link">Angular</a>
+            </li>
+            <li class="category__li">
+              <a href="#" class="category__link">sass</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="become__block">
+        <a href="#" class="become__block-link navopacity">Become an Mentor</a>
+      </div>
+      <div class="login__block">
+        <button class="login__block-login navopacity">Login</button>
+        <button class="login__block-signup navopacity">Sign Up</button>
+      </div>
+      <div class="humburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="humburger__main-block">
+        <div class="humburger__main-block1">
+          <a href="#">Main</a>
+          <a href="#">Second</a>
+          <a href="#">Foot</a>
+          <a href="#">last</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup dn">
+      <div class="popup__flex">
+        <p class="popup__flex-login">Login</p>
+        <span class="popup__flex-close">&#10006;</span>
+      </div>
+      <form action="#" class="login__form">
+        <input class="login__form-input" required placeholder="Login" type="email" />
+        <input class="login__form-input" required placeholder="Password" type="password" />
+        <button type="submit" class="login__form-button">entry</button>
+      </form>
+    </div>
+    <div class="oveflow dn"></div>
+    <div class="modal dn">
+      <div class="modal__flex">
+        <p class="modal__flex-signup">sign up</p>
+        <button class="modal__flex-close">&#10006;</button>
+      </div>
+      <form action="#" class="form__signup">
+        <input required placeholder="Your Name" type="text" class="form__signup-input" />
+        <input required placeholder="Surname" type="text" class="form__signup-input" />
+        <input required placeholder="email" type="email" class="form__signup-input" />
+        <input required placeholder="Phone" type="tel" class="form__signup-input" />
+        <input required placeholder="password" type="password" class="form__signup-input" />
+        <button class="form__signup-btn">Send</button>
+      </form>
+    </div>
+    <div class="overflow__signup dn"></div>
+  </div>
+  <!-- <div id="tops" class="marquee">Добро пожаловать на сайт <span class="namesspan"></span></div> -->
+  <main class="main">
+    <div class="container">
+      <section class="section-best sectionss">
+        <div class="section-best__flex">
+          <div class="block-content">
+            <h1 class="block-content__h1">
+              Сложнее всего начать действовать, все остальное зависит только
+              от упорства.
+            </h1>
+            <p class="block-content__p">
+              Логика может привести Вас от пункта А к пункту Б, а воображение
+              — куда угодно.
+            </p>
+            <form action="#" class="block-content__form">
+              <div class="block-content__fl">
+                <div class="block-content__images">
+                  <img src="icons/searchbest.svg" alt="search" class="block-content__img" />
+                </div>
+                <input required placeholder="Type in the course you want to learn" type="text"
+                  class="block-content__input" />
+              </div>
+              <button type="submit" class="block-content__btn">Search</button>
+            </form>
+            <div class="wrapper">
+              <div class="wrapper__time">
+                <div class="wrapper__images">
+                  <img src="icons/livetime.svg" alt="livetime" class="wrapper__img" />
+                </div>
+                <a href="#" class="wrapper__descr">Life Time Acces</a>
+              </div>
+              <div class="wrapper__time">
+                <div class="wrapper__images">
+                  <img src="icons/mentor.svg" alt="mentor" class="wrapper__img" />
+                </div>
+                <a href="#" class="wrapper__descr">Expert Mentor</a>
+              </div>
+              <div class="wrapper__time">
+                <div class="wrapper__images">
+                  <img src="icons/courses.svg" alt="courses" class="wrapper__img" />
+                </div>
+                <a href="#" class="wrapper__descr">100K+ Courses</a>
+              </div>
+            </div>
+          </div>
+          <div class="block-photo">
+            <img src="https://source.unsplash.com/random/630x580" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="sliderz">
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x600" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x601" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x602" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x603" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x604" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x605" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x606" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x607" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x609" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x610" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x595" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x596" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x597" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x598" alt="" class="img">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-block">
+            <img src="https://source.unsplash.com/random/800x599" alt="" class="img">
+          </div>
+        </div>
+        <button class="btnSl btnLeftSlider">&#10148;</button>
+        <button class="btnSl btnRightSlider">&#10148;</button>
+      </section>
+      <section class="cours sectionss">
+        <h1 class="cours__h1">Trending Courses</h1>
+        <ul class="cours__ul">
+          <li class="cours__list">All</li>
+          <li class="cours__list">Business</li>
+          <li class="cours__list">Art & Design</li>
+          <li class="cours__list">Development</li>
+          <li class="cours__list">Marketing</li>
+        </ul>
+        <div class="card">
+          <div class="card--wrapper">
+            <div class="card--wrapper__images">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMg2cbzsoVuulgYrjEf-L5glW8KiJsPNuKiQ&usqp=CAU"
+                alt="#" class="card--wrapper__img" />
+            </div>
+            <p class="card--wrapper__text">
+              Interpersonal skills - work better with others!
+            </p>
+            <p class="card--wrapper__text1">Tanah Air Team</p>
+            <div class="rating">
+              <div class="rating-flex">
+                <span class="rating-span rating-span1">&#9733;</span>
+                <span class="rating-span rating-span2">&#9733;</span>
+                <span class="rating-span rating-span3">&#9733;</span>
+                <span class="rating-span rating-span4">&#9733;</span>
+                <span class="rating-span rating-span5">&#9733;</span>
+              </div>
+              <span class="rating-calc">(2344)</span>
+            </div>
+            <div class="money">
+              <span class="money-skidka">$700</span>
+              <span class="money-price">$384</span>
+            </div>
+          </div>
+          <div class="card--wrapper">
+            <div class="card--wrapper__images">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwohtTkVN93MHExjfpaIsS7n9uaNypcqfzgbm1mgennB_whBpMQTaA2_o-d3y09GkOWZ4&usqp=CAU"
+                alt="#" class="card--wrapper__img" />
+            </div>
+            <p class="card--wrapper__text">
+              Interpersonal skills - work better with others!
+            </p>
+            <p class="card--wrapper__text1">Tanah Air Team</p>
+            <div class="rating">
+              <div class="rating-flex">
+                <span class="rating-span rating-span1">&#9733;</span>
+                <span class="rating-span rating-span2">&#9733;</span>
+                <span class="rating-span rating-span3">&#9733;</span>
+                <span class="rating-span rating-span4">&#9733;</span>
+                <span class="rating-span rating-span5">&#9733;</span>
+              </div>
+              <span class="rating-calc">(2344)</span>
+            </div>
+            <div class="money">
+              <span class="money-skidka">$700</span>
+              <span class="money-price">$384</span>
+            </div>
+          </div>
+        </div>
+        <div class="more">
+          <button class="more-btn">More Courses</button>
+        </div>
+      </section>
+      <section class="categorys sectionss">
+        <h1 class="categorys__h1">Top Categories</h1>
+        <div class="categorys__grid">
+          <div class="categorys__card" id="test">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="categorys__card">
+            <img src="https://source.unsplash.com/random/310x300" alt="" />
+          </div>
+          <div class="categorys__card">
+            <img src="https://source.unsplash.com/random/320x300" alt="" />
+          </div>
+        </div>
+        <button class="add-photo">добавить еще</button>
+        <article class="art">
+          <div class="art__grid">
+            <button class="art__btn art__btn-active" data-tab="1">
+              <span class="art__btn-span">01</span>
+              Атырау
+            </button>
+            <button class="art__btn" data-tab="2">
+              <span class="art__btn-span">02</span>
+              Дубай
+            </button>
+            <button class="art__btn" data-tab="3">
+              <span class="art__btn-span">03</span>
+              Нью йорк
+            </button>
+            <button class="art__btn" data-tab="4">
+              <span class="art__btn-span">04</span>
+              Лондон
+            </button>
+          </div>
+          <div class="contents">
+            <div class="contens__wrap contens__wrap--1 conte__wrapp-active">
+              <div class="contents__grid">
+                <img src="img/atyrau.png" alt="atyrau" />
+                <p>
+                  Атыра́у (каз. Атырау, Atyrau до 1992 года — Гу́рьев) — город в
+                  европейской части Казахстана, административный центр
+                  Атырауской области. Расположен в западной части страны, на
+                  берегу реки Урал (при основании находился в месте впадения
+                  реки в Каспийское море, однако отдалился от него в
+                  результате падения уровня Каспия). Один из крупнейших
+                  городов Западного Казахстана.
+                </p>
+              </div>
+              <div class="images-block">
+                <img src="img/atyrau1.jpg" alt="" />
+                <img src="img/atyrau2.jpg" alt="" />
+                <img src="img/atyrau3.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="contens__wrap contens__wrap--2">
+              <div class="contents__grid">
+                <img src="img/dubai.avif" alt="dubai" />
+                <p>
+                  Дуба́й[4] (араб. دبي) — крупнейший город Объединённых
+                  Арабских Эмиратов и глубоководный морской порт,
+                  административный центр одноимённого эмирата, важнейший
+                  торговый и финансовый центр ОАЭ[6] и всего Ближнего Востока.
+                  Расположен на берегу Персидского залива. В 1954—1971 годах
+                  являлся административным центром британского протектората
+                  Договорный Оман. В Дубае проводятся разнообразные
+                  международные конференции, фестивали, выставки и т. п. С 1
+                  октября 2021 года по 31 марта 2022 года в Дубае проводилась
+                  всемирная выставка Экспо-2020.
+                </p>
+              </div>
+              <div class="images-block">
+                <img src="img/dubai1.jpeg" alt="" />
+                <img src="img/dubai2.jpeg" alt="" />
+                <img src="img/dubai3.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="contens__wrap contens__wrap--3">
+              <div class="contents__grid">
+                <img src="img/newyourk.png" alt="new-yourk" />
+                <p>
+                  Нью-Йо́рк (англ. New York City сокр. NYC) — крупнейший город
+                  США, входящий в одну из крупнейших агломераций мира.
+                  Население города составляет 8 467 513 человек, агломерации —
+                  19,77 млн (оценка на 2021 год). Нью-Йорк расположен на
+                  берегу Атлантического океана в юго-восточной части штата
+                  Нью-Йорк. Город был основан в начале XVII века голландскими
+                  колонистами и до 1664 года назывался Новый Амстердам.
+                </p>
+              </div>
+              <div class="images-block">
+                <img src="img/new1.jpeg" alt="" />
+                <img src="img/new2.jpeg" alt="" />
+                <img src="img/new3.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="contens__wrap contens__wrap--4">
+              <div class="contents__grid">
+                <img src="img/london.jpg" alt="london" />
+                <p>
+                  Ло́ндон англ. London [ˈlʌndən] — столица и крупнейший город
+                  Англии и Великобритании. Административно образует регион
+                  Англии Большой Лондон, разделённый на 33 самоуправляемых
+                  территории Население составляет 8 908 081 чел. (2018) —
+                  третий по величине город Европы. Образует агломерацию
+                  Большой Лондон и более обширный метрополитенский район.
+                  Расположен на юго-востоке острова Великобритания, на равнине
+                  в устье Темзы, вблизи Северного моря. Главный политический,
+                  экономический и культурный центр Соединённого Королевства.
+                </p>
+              </div>
+              <div class="images-block">
+                <img src="img/lon1.jpeg" alt="" />
+                <img src="img/lon2.jpeg" alt="" />
+                <img src="img/lon3.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="topscroll sectionss"><a href="#tops" class="spanScroll">&uarr;</a></div>
+  </main>
+  <footer class="footer sectionss">
+    <div class="container">
+      <div class="f__flex">
+        <div class="f__flex-descr">
+          <a href="#" class="descr__block">
+            <img src="icons/header-logo.svg" alt="" class="descr__block-logo marginBottom36px" />
+          </a>
+          <p class="descr__block-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+            tristique placerat eleifend aliquam pellentesque facilisis
+            ultrices. Imperdiet mus urna egestas at tellus.
+          </p>
+        </div>
+        <div class="f__flex--about">
+          <a href="#" class="about marginBottom36px">About</a>
+          <ul class="about__ul">
+            <li class="about__list">
+              <a href="#" class="about__link">About us</a>
+            </li>
+            <li class="about__list">
+              <a href="#" class="about__link">Courses</a>
+            </li>
+            <li class="about__list">
+              <a href="#" class="about__link">Mentor</a>
+            </li>
+            <li class="about__list">
+              <a href="#" class="about__link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="f__flex--support">
+          <a href="#" class="about marginBottom36px">Support</a>
+          <ul class="about__ul">
+            <li class="about__list">
+              <a href="#" class="about__link">Careers</a>
+            </li>
+            <li class="about__list">
+              <a href="#" class="about__link">Help & Support</a>
+            </li>
+            <li class="about__list">
+              <a href="#" class="about__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="f__flex--company">
+          <a href="#" class="about marginBottom36px">Company</a>
+          <ul class="about__ul">
+            <li class="about__list">
+              <a href="#" class="about__link">Privacy Policy</a>
+            </li>
+            <li class="about__list">
+              <a href="#" class="about__link">Terms of Service</a>
+            </li>
+            <li class="about__list">
+              <a href="#" class="about__link">Code of Conduct</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="policy">
+        <div class="policy__text">
+          <a href="#" class="policy__privacy">Privacy Policy</a>
+          <a href="#" class="policy__privacy">Terms and Condition</a>
+        </div>
+        <a href="#" class="policy__privacy">@2020 TanahAir Studio. All rights reserved.</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
